@@ -4,7 +4,6 @@
 #
 # File counting in linux
 #
-# Written by st4rm
 
 echo "File Counting..."
 
