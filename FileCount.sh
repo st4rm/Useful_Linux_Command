@@ -1,9 +1,11 @@
 #!/bin/bash
-#
+
 # FileCount.sh(Version 1.0) - Mar 20, 2015
 #
 # File counting in linux
 #
+# Written by st4rm
+
 
 echo "File Counting..."
 
