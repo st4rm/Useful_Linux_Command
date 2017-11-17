@@ -3,7 +3,7 @@
 # FileCount.sh(Version 1.0) - Mar 20, 2015
 #
 # File counting in linux
-###
+#
 
 echo "File Counting..."
 
