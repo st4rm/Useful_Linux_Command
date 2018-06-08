@@ -14,6 +14,7 @@ fi
 
 if [ -f $DIR/$FILE ]
 then
+	echo "Previos result file is deleted"
 	rm $DIR/$FILE
 fi
 
