@@ -1,9 +1,11 @@
 #!/bin/bash
 
-FILE="file_sig_result.txt"
+FILE="file_sig_result.txt"	# result file name
 
 echo -n "Input directory for result file.(ex. /tmp): " 
 read DIR
+
+echo ""
 
 if [ -d $DIR ]
 then
@@ -19,9 +21,9 @@ then
 fi
 
 
-find . -exec basename {} \; > $DIR/filename.txt
-sort $DIR/filename.txt > $DIR/sorted_filename.txt
-cat $DIR/sorted_filename.txt | \
+find . -exec basename {} \; > $DIR/filename.txt		# extract file name
+sort $DIR/filename.txt > $DIR/sorted_filename.txt	# sort file name
+cat $DIR/sorted_filename.txt | \			# extract 16 byte from files and create result file
 	while read line
 	do
 		echo $line >> $DIR/$FILE
@@ -29,4 +31,4 @@ cat $DIR/sorted_filename.txt | \
 		echo "" >> $DIR/$FILE
 	done
 
-rm -rf $DIR/filename.txt $DIR/sorted_filename.txt
+rm -rf $DIR/filename.txt $DIR/sorted_filename.txt	# delete temporary files
