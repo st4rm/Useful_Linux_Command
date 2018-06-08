@@ -1,4 +1,10 @@
 #!/bin/bash
+# filesig.sh(Version 1.0) - June 8, 2018
+#
+# Extract 16 byte of hexa value frome files
+#
+# Written by st4rm
+
 
 FILE="file_sig_result.txt"	# result file name
 
