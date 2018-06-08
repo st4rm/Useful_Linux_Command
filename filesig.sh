@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # filesig.sh(Version 1.0) - June 8, 2018
 #
 # Extract 16 byte of hexa value frome files
