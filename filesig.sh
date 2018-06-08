@@ -20,6 +20,7 @@ then
 	rm $DIR/$FILE
 fi
 
+echo ""
 
 find . -exec basename {} \; > $DIR/filename.txt		# extract file name
 sort $DIR/filename.txt > $DIR/sorted_filename.txt	# sort file name
