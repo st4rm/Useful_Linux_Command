@@ -2,7 +2,7 @@
 
 FILE="file_sig_result.txt"
 
-echo -n "Input directory (ex. /tmp): " 
+echo -n "Input directory for result file.(ex. /tmp): " 
 read DIR
 
 if [ -d $DIR ]
