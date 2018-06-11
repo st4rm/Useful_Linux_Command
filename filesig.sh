@@ -31,7 +31,9 @@ echo ""
 
 find . -exec basename {} \; > $DIR/filename.txt		# extract file name
 sort $DIR/filename.txt > $DIR/sorted_filename.txt	# sort file name
-cat $DIR/sorted_filename.txt | \			# extract 16 byte from files and create result file
+
+## extract 16 byte from files and create result file
+cat $DIR/sorted_filename.txt | \
 	while read line
 	do
 		echo $line >> $DIR/$FILE
