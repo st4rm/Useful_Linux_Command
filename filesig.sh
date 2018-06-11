@@ -37,6 +37,7 @@ cat $DIR/sorted_filename.txt | \
 	while read line
 	do
 		echo $line >> $DIR/$FILE
+		file $line >> $DIR/$FILE
 		xxd -l 16 $line >> $DIR/$FILE
 		echo "" >> $DIR/$FILE
 	done
