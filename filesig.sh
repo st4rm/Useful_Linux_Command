@@ -5,7 +5,11 @@
 # Extract 16 byte of hexa value frome files
 #
 # Written by st4rm
-
+# 
+# Caution!! 
+#  : Some file's signature is not started from 00 byte
+#  : but, this program is not concerned aboout that.
+#
 
 FILE="file_sig_result.txt"	# result file name
 
@@ -29,10 +33,11 @@ fi
 
 echo ""
 
-find . -exec basename {} \; > $DIR/filename.txt		# extract file name
+find . -type f -exec basename {} \; > $DIR/filename.txt		# extract file name
 sort $DIR/filename.txt > $DIR/sorted_filename.txt	# sort file name
 
-## extract 16 byte from files and create result file
+
+## Print file type with unix command(file) and write 16 byte from files 
 cat $DIR/sorted_filename.txt | \
 	while read line
 	do
